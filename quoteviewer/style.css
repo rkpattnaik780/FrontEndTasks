@@ -1,0 +1,32 @@
+#hding{
+  text-align : center ;
+  margin-top : 30px ;
+  margin-bottom : 30px ;
+}
+p{
+  font-size : 14px;
+}
+#inspire{
+  display : block ;
+  border : 0px solid grey;
+  width : 300px ;
+  position : relative;
+  left : 5%;
+}
+#cont{
+
+}
+#disp{
+  margin-top : 400px;
+  position : relative ;
+  width : 750px;
+  margin : auto ;
+  display : block ;
+  height : 200px;
+}
+#clk{
+  position : absolute;
+  margin-right : 3%;
+  bottom : 0px;
+  right : 15px;
+}
