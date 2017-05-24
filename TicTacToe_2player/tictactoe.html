@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<title>Tic-Tac-Toe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="tictactoe.css">
+</head>
+<body>
+<section class="container">
+<h1 class="nam"><u> The Game Of Tic-Tac-Toe! </u></h1>
+<br><br><br><br><br>
+<div class="alert alert-info alert-dismissable" ><p id="alert1"></p>
+<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+<br>
+</div>
+<div class="alert alert-info alert-dismissable"  ><p id="alert2"></p>
+<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+<br>
+</div>
+<br><br>
+<table class="board">
+<tr><td onclick="moved1()"><img id="box1" width="100px" height="100px"></td>
+<td onclick="moved2()" ><img id="box2" width="100px" height="100px"></td>
+<td onclick="moved3()" ><img id="box3" width="100px" height="100px"></td></tr>
+<tr><td onclick="moved4()" ><img id="box4" width="100px" height="100px"></td>
+<td onclick="moved5()" ><img id="box5" width="100px" height="100px"></td>
+<td onclick="moved6()" ><img id="box6" width="100px" height="100px"></td></tr>
+<tr><td onclick="moved7()" ><img id="box7" width="100px" height="100px"></td>
+<td onclick="moved8()" ><img id="box8" width="100px" height="100px"></td>
+<td onclick="moved9()" ><img id="box9" width="100px" height="100px"></td></tr>
+</table>
+<br><br>
+<button data-toggle="collapse" data-target="#demo" class="btn btn-primary">Rules of TicTacToe</button>
+<br><br><br>
+<div id="demo" class="collapse">
+<ul class="rules">
+    <li> Have the first player go first.</li>
+    <li>Have the second player go second.</li>
+    <li>Keep alternating moves until one of the players has drawn a consecutive sequence of three symbols or until no one can win.</li>
+    <li>Keep practicing. </li>
+</ul>
+</div>
+<br><br><br><br><br>
+</section>
+<script type="text/javascript" src="tictactoe.js"></script>
+</body>
+</html>
