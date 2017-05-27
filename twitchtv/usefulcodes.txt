@@ -1,0 +1,75 @@
+var test ; 
+ var channelNames = ["saltyteemo","cretetion","freecodecamp","storbeck","habathcx","noobs2ninjas","brunofin"] ;
+ for( var i = 0 ; i < channelNames.length ; i ++){
+     test = "https://api.twitch.tv/kraken/streams/" + channelsNames[i] + "?client_id=59x9ex7f5zzongzntqx0zrwleoxy12" ;
+     alert(test) ;
+   $.getJSON(test,function(data){
+     if(data.stream === null){
+      $("#lst").append("<tr><td><img width=\"40px\" height =\"40px\"></td><td>" + channelsName[i] + "</td><td> Channel is offline! " +
+      "</td></tr>")
+
+    }else{
+      $("#lst").append("<tr><td><img width=\"40px\" height =\"40px\"></td><td>" + channelsName[i] + "</td><td> Channel is online! " +
+      "</td></tr>")
+    }
+   
+  
+   // console.log(data); */
+  
+
+<table id = "lst">
+<tr>
+<th>Logo</th><th>Name of the channel</th><th>Status</th>
+</tr>
+</table>
+
+
+the following works :
+
+
+var recur = "https://api.twitch.tv/kraken/streams/" + channelNames[0] + "?client_id=59x9ex7f5zzongzntqx0zrwleoxy12" ;
+  alert(recur) ;
+    $.getJSON(recur).done(function(data2){
+    if(data2.stream === null){
+      alert("offline") ;
+    }else{
+      alert("online") ;
+    }
+  });
+    
+  }); 
+ } 
+
+
+
+ somewhat works : 
+
+  for( var i = 0 ; i < channelNames.length ; i ++)  
+      {    var tempname = channelNames[i] ;
+           
+           var recurr = "https://api.twitch.tv/kraken/streams/" + tempname + "?client_id=59x9ex7f5zzongzntqx0zrwleoxy12" ;
+            $.getJSON(recurr).done(function(data2){
+            alert(recurr);
+            if(data2.stream === null){
+               $("#lst").append("<tr><td>Hello World</td><td>" + tempname + "</td><td> Channel is offline! " +  "</td></tr>");
+            
+            }else{
+               $("#lst").append("<tr><td>Hello World</td><td>" + tempname + "</td><td> Channel is online! " +  "</td></tr>");
+              
+               }
+  });
+          // $("#lst").append("<tr><td>Hello</td><td>" + channelNames[i] + "</td><td> Channel is online! " +
+          // "</td></tr>");
+    }
+
+
+
+helped a lot : 
+
+ for (var i = 0; i < array.length; i++) {
+    (function(i) { // protects i in an immediately called function
+      $.getJSON('/api.php?action=query&list=querypage&qppage=' + array[i] + '&format=json', function (data) {
+        $('#' + array[i]).text(data.query.querypage.results.length);
+      });
+    })(i);
+}
