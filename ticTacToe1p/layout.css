@@ -1,0 +1,23 @@
+.a{
+ padding : 0px ;
+}
+.board
+{margin-top : 200px;
+ margin : auto ;
+ padding : 25px;
+}
+
+.nam {text-align: center;}
+img {padding : 3px ;}
+.board td{border: 1px solid black;}
+table,td {border-collapse : collapse;
+          border-left :none;
+          border-right : none; }
+.board td:hover {box-shadow : 10px 10px 3px #ffffe6;}
+.rules{border:1px solid black;
+       list-style-position: inside;
+       min-width: 300px;
+       list-style-type: square;
+       padding : 20px;
+       margin-top : 25px;
+       margin-bottom: 25px;}

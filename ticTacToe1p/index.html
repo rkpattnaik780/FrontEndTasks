@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Tic-Tac-Toe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="layout.css" type="text/css">
+</head>
+<body>
+<section class="container">
+<h1 class="nam"><u> The Game Of Tic-Tac-Toe! </u></h1>
+<br><br><br><br><br>
+<br><br>
+<table class="board">
+<tr><td><img id="1" width="100px" height="100px" class ="a"></td>
+<td><img id="2" width="100px" height="100px" class = "a"></td>
+<td><img id="3" width="100px" height="100px" class = "a"></td></tr>
+<tr><td><img id="4" width="100px" height="100px" class = "a"></td>
+<td><img id="5" width="100px" height="100px" class="a"></td>
+<td><img id="6" width="100px" height="100px" class="a"></td></tr>
+<tr><td><img id="7" width="100px" height="100px" class = "a"></td>
+<td><img id="8" width="100px" height="100px" class = "a"></td>
+<td><img id="9" width="100px" height="100px" class = "a"></td></tr>
+</table>
+<br><br>
+<p id = "check"></p>
+<button data-toggle="collapse" data-target="#demo" class="btn btn-primary">Rules of TicTacToe</button>
+<br><br><br>
+<div id="demo" class="collapse">
+<ul class="rules">
+    <li> Have the first player go first.</li>
+    <li>Have the second player go second.</li>
+    <li>Keep alternating moves until one of the players has drawn a consecutive sequence of three symbols or until no one can win.</li>
+    <li>Keep practicing. </li>
+</ul>
+</div>
+<br><br><br><br><br>
+</section>
+<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
