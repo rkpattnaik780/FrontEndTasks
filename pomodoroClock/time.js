@@ -30,9 +30,9 @@ $(document).ready(function () {
         t5 *= 60;
         function showTimeLeft() {
             if (t5 === 0) {
-                clearInterval(check);
-                tune.play();
+                clearInterval(check);                
                 $("#time1").html(" Time left - 00 : 00 ");
+                tune.play();
             }
             else if (t5 % 60 < 10)
             { $("#time1").html(" Time left - " + Math.floor(t5 / 60) + " : 0" + t5 % 60); }
