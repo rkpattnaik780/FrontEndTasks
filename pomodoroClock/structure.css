@@ -1,0 +1,81 @@
+body {
+    background-color: #ccccff ;
+}
+#contrlbrk  td {
+    padding : 5px ;
+    border : 0px solid black ;
+   }
+#contrlbrk {
+     margin: auto ;
+     margin-top: 30px;
+     margin-bottom: 30px ;
+     border : 0px solid black ;
+}
+#contrlssn {
+     margin: auto ;
+     margin-top: 30px;
+     margin-bottom: 30px ;
+}
+#contrlssn td {
+   padding : 5px ;
+}
+#brkdisp{
+    border : 1px solid black ;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    font-size: 14px ;
+    margin : auto ;
+}
+#ssndisp{
+    border : 1px solid black ;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    font-size: 14px ;
+    margin : auto ;
+}
+#time{
+    border: 1px solid black ;
+    max-width : 200px;
+    margin : auto ;
+    height : 200px ;
+}
+#reset{
+    border: 0px solid black ;
+    max-width : 200px;
+    margin : auto ;
+    margin-top : 20px ;
+}
+#reset1{
+    padding-left: 82px;
+    padding-right : 82px;
+    padding-top : 10px;
+    padding-bottom: 10px;
+    font-size : 14px;
+}
+#start{
+    border: 0px solid black ;
+    max-width : 200px;
+    margin : auto ;
+    margin-top: 10px ;
+    
+}   
+#start1{
+    padding-left: 85px;
+    padding-right : 85px;
+    padding-top : 10px;
+    padding-bottom: 10px;
+    font-size : 14px;
+}
+#reset1:hover{
+    background-color: green ;
+}
+#start1:hover{
+    background-color: green ;
+}
+#time1{
+    font-size : 20px ;
+}
