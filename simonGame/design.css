@@ -1,0 +1,99 @@
+#submit{
+    position : absolute ;
+    right : 300px ;
+    bottom: 300px ;
+}
+#hd{
+    max-width : 260px ;
+    padding : 10px ;
+    border-radius : 5px ;
+    text-align: center ;
+    font-size : 25px ;
+    border : 1px solid black ;
+    margin : auto ;
+    margin-top : 25px ;
+    margin-bottom : 50px ;
+}
+#simon{
+    max-width : 505px ;
+    margin : auto ;
+    padding : 16px ;
+    border : 1px solid black ;
+    align-content: center ;
+    position : relative ;
+    z-index: 1 ;
+}
+#redpanel{
+    background-color : #b30000 ;
+    border-top : 30px solid black;
+    border-left: 30px solid black ;
+    border-right : 15px solid black ;
+    border-bottom: 15px solid black ;
+    width : 250px ;
+    height : 250px;
+    border-radius : 100% 0 0 0 ;
+}
+#greenpanel{
+    background-color: #004d00 ;
+    border-left : 15px solid black ;
+    border-bottom: 15px solid black ;
+    border-top : 30px solid black;
+    border-right : 30px solid black ;
+    width : 250px;
+    height : 250px;
+    border-radius : 0 100% 0 0 ;
+}
+#bluepanel{
+    background-color: #000099 ;
+    border-left : 30px solid black ;
+    border-bottom: 30px solid black ;
+    border-top : 15px solid black;
+    border-right : 15px solid black ;
+    width : 250px;
+    height : 250px;
+    border-radius : 0 0 0 100% ;
+}
+#yelpanel{
+    background-color: #ffff99;
+    border-left : 15px solid black ;
+    border-bottom: 30px solid black ;
+    border-top : 15px solid black;
+    border-right : 30px solid black ;
+    width : 250px;
+    height : 250px;
+    border-radius : 0 0 100% 0 ;
+}
+
+#control{
+    position : absolute ;
+    top : 150px ;
+    border-radius: 1px solid black ;
+    left : 130px ;
+    z-index : 2 ;
+    height : 250px ;
+    width : 250px ;
+    border-radius : 100% ;
+    margin : auto ;
+    background-color : grey ;
+}
+#rect{
+    position : absolute ;
+    margin-top : 80px ;
+    margin-left : 40px;
+    padding : 5px ;
+    border : 1px solid black ;
+    width : 175px;
+    height : 100px ;
+}
+#countshow{
+    width : 70px ;
+    height :40px ;
+    border: 1px solid black ;
+    margin : auto ;
+    background-color: black ;
+    margin-top : -12px ;
+    font-size: 18px ;
+    text-align : center ;
+    vertical-align: middle ;
+    color : red ;
+}
