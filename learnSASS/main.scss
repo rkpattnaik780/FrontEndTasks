@@ -1,0 +1,42 @@
+// implements the variable and nesting property.
+// nesting is used to give properties to child elements.
+
+@import "partials" ;  // imports the content of _partials.scss
+
+$bgcolor : red ;
+$frame : 1px solid black ;
+$sizing : 300px ;
+#trial{
+    background-color: $bgcolor ;
+    border : $frame ;
+    max-width: $sizing ;
+    margin : auto ;
+    margin-top : 20px ;
+}
+div.sslangs{
+    margin-top: 20px ;
+    ul{ 
+        list-style-type: square ;        
+    }
+    li{
+        color : $bgcolor ;
+    }
+}
+
+// Mixin are used as eqvt functions in CSS where the properties are determined by argument passed.
+
+@mixin roundcorners($rad){
+    border-radius: $rad ;
+}
+.writings{
+    max-width : 500px;
+    border : $frame ;
+    padding : 20 px ;
+    @include roundcorners(5px) ;
+    margin : auto ;
+}
+.small-writings{
+    @extend .writings ;
+    font-size : 10px ;
+}
+  // Extend keyword is like inheritance of OOP.

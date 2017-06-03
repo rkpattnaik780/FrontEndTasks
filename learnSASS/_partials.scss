@@ -1,0 +1,7 @@
+// used to inclue snippets of css code into other files.
+// _fileName indicates that the file is to be included in other scss files.
+
+$pad : 30px ;
+body{
+    padding : $pad ;
+}

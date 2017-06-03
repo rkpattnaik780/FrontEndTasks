@@ -1,0 +1,33 @@
+body {
+  padding: 30px;
+}
+
+#trial {
+  background-color: red;
+  border: 1px solid black;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+div.sslangs {
+  margin-top: 20px;
+}
+div.sslangs ul {
+  list-style-type: square;
+}
+div.sslangs li {
+  color: red;
+}
+
+.writings, .small-writings {
+  max-width: 500px;
+  border: 1px solid black;
+  padding: 20 px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.small-writings {
+  font-size: 10px;
+}
