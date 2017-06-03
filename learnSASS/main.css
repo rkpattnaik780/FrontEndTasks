@@ -31,3 +31,19 @@ div.sslangs li {
 .small-writings {
   font-size: 10px;
 }
+
+.btpad, .btnbrite, .btnlight {
+  padding: 5px;
+}
+
+.btnbrite {
+  background-color: #ff4d4d;
+}
+
+.btnlight {
+  background-color: #ff7474;
+}
+
+button {
+  display: inline-block;
+}

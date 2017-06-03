@@ -40,3 +40,21 @@ div.sslangs{
     font-size : 10px ;
 }
   // Extend keyword is like inheritance of OOP.
+  
+  // Operations in SCSS files is simple and it has ability to determine the unit .
+
+$btcolor : #ff4d4d ;
+.btpad{
+    padding : 5px ;
+}
+.btnbrite{
+    background-color : $btcolor ;
+    @extend .btpad ;
+}
+.btnlight{
+    background-color: 1.5 * $btcolor ;
+    @extend .btpad ;
+}
+button{
+    display : inline-block ;
+}
