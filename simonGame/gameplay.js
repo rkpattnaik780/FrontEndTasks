@@ -11,9 +11,9 @@ $(document).ready(function () {
     }
     else {
       alert("Simon beats you . Try next time");
-      simon.playerMoves = [];
-      $("#countshow").html("0");
     }
+    simon.playerMoves = [];
+    $("#countshow").html("0");
   });
   var simon = {
     count: 1,
@@ -97,8 +97,12 @@ $(document).ready(function () {
         setTimeout(function () {
           var temp = simon.panels[simon.cpuMoves[i]];
           $(temp).css("background-color", simon.initcolor[simon.cpuMoves[i]]);
+          if (i === simon.cpuMoves.length - 1) {
+            alert("User has to click the panels in the right pattern!\nand submit");
+          }
           //  alert(temp) ;
         }, 300 + i * 1000);
+
       })(i);
     }
     $("#submit").show();
