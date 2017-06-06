@@ -1,11 +1,17 @@
 <!doctype HTML>
 <html>
+
 <head>
   <style>
-  p{font-size : 20px ;
-    text-indent :90px;}
-  #disp{margin-top : 100px;}
-</style>
+    p {
+      font-size: 20px;
+      text-indent: 90px;
+    }
+
+    #disp {
+      margin-top: 100px;
+    }
+  </style>
   <title>Quotes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,21 +20,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body> 
 
-<div class="container" id="cont">
-  <h1 id="hding"><u>Random Quote Generator</u></h2>
-  <div class = "well" id="disp">
-    <h2 id="inspire">What they said!!</h2>
-    <p>I dont</p>
- 
-    <button type="button" class="btn btn-primary" id="clk">
-      Click here</button>
+<body>
+
+  <div class="container" id="cont">
+    <h1 id="hding">
+      <u>Random Quote Generator</u>
+      </h2>
+      <div class="well" id="disp">
+        <h2 id="inspire">What they said!!</h2>
+        <p>I dont</p>
+        <button type="button" class="btn btn-primary" id="tweet"><a href = "" id = "twit">
+      Tweet it</a></button>
+        <button type="button" class="btn btn-primary" id="clk" onclick="generate()">Click here
+      </button>
+        <br>
+      </div>
       <br>
   </div>
-  <br>
-</div>
 
 </body>
 <script src="quotes.js" type="text/javascript"></script>
+
 </html>
