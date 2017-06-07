@@ -1,0 +1,29 @@
+
+#head{
+    text-align: center ;
+    max-width : 530px;
+    margin : auto ;
+    margin-top : 20px ;
+    margin-bottom: 50px ;
+    padding : 30px;
+    border-radius : 5px;
+    background-color: #ffff99 ;
+    border : 1px solid black ;
+}
+#calc{
+    width : 300px ;
+    height : 280px;
+    margin : auto ;
+    border: 1px solid black;
+    background-color: #b3ffb3 ;
+}
+#calc td {padding : 5px ;}
+#disp{
+    width : 275px ;
+    height : 50px ;
+    background-color: #c3c2ab ;
+    margin-top : 15px ;
+    overflow-x : hidden;
+    font-size: 18px;
+    border-radius: 5px ;
+}
