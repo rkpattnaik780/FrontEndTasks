@@ -20,25 +20,42 @@
 <body>
     <section class="container">
         <h1 id="hd">THE SIMON GAME</h1>
-        <div id="simon">
+        <div id="simon" >
             <div id="control">
                 <div id="rect">
+                    
                     <div class="row">
-                        <div class="col-sm-5" style="text-align : center;">
+                        <div class="col-sm-4" style="text-align : center;">
                             <button type="button" class="btn" id="start">Start</button>
                         </div>
-                        <div class="col-sm-5" style="text-align : center;">
+                        <div class="col-sm-4" style="text-align : center;">
                             <button type="button" id="res" class="btn">Reset</button>
                         </div>
+                        <div class = "col-sm-4">
+                            <button type="button" id="mode" class="btn btn-danger">
+                                Strict
+                            </button>
+                        </div>
+                        </div>
+                        <div class = "row">
+                        <div class = "col-sm-12 text-center" style="padding-top : 5px ;">
+                            <p id="ifStrict">Strict !</p>
+                        </div>
+                        </div>
+                        <div class = "row">
+                        <div class = "col-sm-12">                                  
                         <div style="text-align : center">
                             <p>COUNT</p>
                             <p id="countshow">
                                 0
                             </p>
                         </div>
-                    </div>
+                        </div>
+                        </div>
+                    <!-- -->
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-sm-6" id="redpanel">
 
@@ -54,6 +71,7 @@
 
                 </div>
             </div>
+            
         </div>
     </section>
 </body>

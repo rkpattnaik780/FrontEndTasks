@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    var strictPlay = false;
+    var isOn = false ;
     var simon = {
         current: 0, // changes in every round to zero , gets updated after each click
         round: 0, // max value is 6  
@@ -14,10 +16,12 @@ $(document).ready(function () {
     };
     $("#countshow").html("0");
     $(".col-sm-6").click(function () {
-        if(simon.current == 6 && simon.round == 6){
-            alert('you won!') ;
-            return ;
-
+        if(isOn){
+        if (simon.current == 6 && simon.round == 6) {
+            alert('you won!');
+            $('#countshow').html('0');
+            strictMode();
+            return;
         }
         var ch = "#" + $(this).attr("id");
         if (ch == simon.panels[simon.cpuMoves[simon.current]]) {
@@ -28,18 +32,20 @@ $(document).ready(function () {
             else if (simon.current == simon.round) {
                 beepOnTouch(ch);
                 simon.current = 0;
-                simon.round ++;
-                setTimeout( function() {$("#countshow").html(simon.round + 1); } , 1200 );
-                setTimeout( function(){showPattern();} , 1200 ) ;
+                simon.round++;
+                setTimeout(function () { $("#countshow").html(simon.round + 1); }, 1200);
+                setTimeout(function () { showPattern(); }, 1200);
             }
-
         }
-        else
-        { alert('Simon wins');
-          return ; }
-    });
-
-
+        else {
+            if (strictPlay) {
+                strictMode();
+                $('#countshow').html('0');
+            }
+            else normalMode();
+            alert("Wrong Button!");
+        }
+    }});
     // this function makes the panel beep with xound .
     function beepOnTouch(col) {
         if (col === "#redpanel") {
@@ -90,22 +96,40 @@ $(document).ready(function () {
         if (i === 3)
         { yellow.play(); }
     }
-    $("#start").click(function(){
-      $("#countshow").html("1");
-      setTimeout(function () {
-                    var temp = simon.panels[simon.cpuMoves[0]];
-                    $(temp).css("background-color", simon.color[simon.cpuMoves[0]]);
-                    playSound(simon.cpuMoves[0]);
-                    // alert(temp) ;
-                     }, 500);
-      setTimeout(function () {
-                    var temp = simon.panels[simon.cpuMoves[0]];
-                    $(temp).css("background-color", simon.initcolor[simon.cpuMoves[0]]);
-                    }, 800); 
-  }) ;
-  $("#res").click(function(){
-     $('#countshow').html('1') ;
-     simon.current = 0 ;
-     simon.round = 0 ;
-  });
+    function strictMode() {
+        simon.current = 0;
+        simon.round = 0;
+    }
+    function normalMode() {
+        simon.current = 0;
+        setTimeout(function () { showPattern(); }, 1200);
+    }
+    $("#start").click(function () {
+        isOn = true ;
+        $("#countshow").html("1");
+        setTimeout(function () {
+            var temp = simon.panels[simon.cpuMoves[0]];
+            $(temp).css("background-color", simon.color[simon.cpuMoves[0]]);
+            playSound(simon.cpuMoves[0]);
+            // alert(temp) ;
+        }, 500);
+        setTimeout(function () {
+            var temp = simon.panels[simon.cpuMoves[0]];
+            $(temp).css("background-color", simon.initcolor[simon.cpuMoves[0]]);
+        }, 800);
+    });
+    $("#ifStrict").css("visibility", "hidden");
+    $("#mode").click(function () {
+        if(isOn){
+        $("#ifStrict").css("visibility", "visible");
+        strictPlay = true;
+        }
+    });
+    $("#res").click(function () {
+        if(isOn){
+        $('#countshow').html('0');
+        simon.current = 0;
+        simon.round = 0;
+        }
+    });
 });
