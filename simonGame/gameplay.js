@@ -15,7 +15,7 @@ $(document).ready(function () {
         initcolor: ["#b30000", "#004d00", "#000099", "#ffff99"]
     };
     $("#countshow").html("0");
-    $(".col-sm-6").click(function () {
+    $(".col-xs-6").click(function () {
         if(isOn){
         if (simon.current == 6 && simon.round == 6) {
             alert('you won!');
